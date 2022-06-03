@@ -1,3 +1,5 @@
+import Container from '../Container';
+
 const Featured = () => {
   const imgLink = [
     'https://br.web.img3.acsta.net/pictures/16/09/29/21/15/495786.jpg',
@@ -5,10 +7,10 @@ const Featured = () => {
     'https://br.web.img3.acsta.net/pictures/22/01/05/09/48/4964345.jpg',
   ];
   return (
-    <div>
+    <Container>
       <h1>Olá Mundo! Destaque</h1>
       <img src={imgLink[1]} />
-    </div>
+    </Container>
   );
 };
 
