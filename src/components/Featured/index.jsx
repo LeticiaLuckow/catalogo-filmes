@@ -46,11 +46,11 @@ const Featured = () => {
 
         <ImgDiv>
           <ArrowButton onClick={prevImg}>
-            <ArrowLeftCircle width={40} />
+            <ArrowLeftCircle width={40} color="#fff" />
           </ArrowButton>
           <img src={imgLink[imgPos]} style={{ width: '400px' }} />
           <ArrowButton onClick={nextImg}>
-            <ArrowRightCircle width={40} />
+            <ArrowRightCircle width={40} color="#fff" />
           </ArrowButton>
         </ImgDiv>
       </div>

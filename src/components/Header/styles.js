@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 const HeaderDiv = styled.div`
-  background: #80a3cf;
+  background: #ff0047;
   display: flex;
   align-items: center;
 `;

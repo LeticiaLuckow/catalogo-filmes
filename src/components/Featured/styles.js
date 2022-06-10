@@ -9,6 +9,7 @@ const ImgDiv = styled.div`
 const FeaturedTitle = styled.h1`
   margin: 0;
   font-size: 32px;
+  color: white;
 `;
 
 const ArrowButton = styled.button`
