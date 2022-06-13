@@ -1,4 +1,5 @@
 import Featured from './components/Featured/index';
+import Footer from './components/Footer';
 import Header from './components/Header/index';
 import NewMovies from './components/NewMovies';
 
@@ -8,6 +9,7 @@ const App = () => {
       <Header />
       <Featured />
       <NewMovies />
+      <Footer />
     </div>
   );
 };
