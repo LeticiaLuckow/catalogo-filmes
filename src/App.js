@@ -1,16 +1,15 @@
-import Featured from './components/Featured/index';
-import Footer from './components/Footer';
-import Header from './components/Header/index';
-import NewMovies from './components/NewMovies';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './Pages/Home';
+import Movie from './Pages/Movie';
 
 const App = () => {
   return (
-    <div style={{ backgroundColor: '#000' }}>
-      <Header />
-      <Featured />
-      <NewMovies />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="movie" element={<Movie />} />
+        <Route path="/" element={<Home />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 };
 

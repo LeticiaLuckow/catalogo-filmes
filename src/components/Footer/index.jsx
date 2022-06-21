@@ -1,7 +1,7 @@
 import { Github, Linkedin } from '@styled-icons/bootstrap';
 import { DivIcons, FooterP } from './styles';
 
-const FooterDiv = () => {
+const Footer = () => {
   return (
     <div>
       <DivIcons>
@@ -21,4 +21,4 @@ const FooterDiv = () => {
   );
 };
 
-export default FooterDiv;
+export default Footer;
