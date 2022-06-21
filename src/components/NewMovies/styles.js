@@ -2,8 +2,9 @@ import styled from 'styled-components';
 
 const TitleP = styled.p`
   margin: 0;
-  font-size: 40px;
+  font-size: 32px;
   color: white;
+  font-family: sans-serif;
 `;
 
 const CardList = styled.div`

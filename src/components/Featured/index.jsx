@@ -34,10 +34,11 @@ const Featured = () => {
   )
     .then((Response) => Response.json())
     .then((data) => {
-      console.log('data', data);
+      console.log('data', data.results);
     });
 
   //styled-icons
+  //https://image.tmdb.org/t/p/w500/kqjL17yufvn9OVLyXYpvtyrFfak.jpg
 
   return (
     <Container>

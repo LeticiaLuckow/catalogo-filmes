@@ -7,9 +7,10 @@ const ImgDiv = styled.div`
   justify-content: center;
 `;
 const FeaturedTitle = styled.h1`
-  margin: 0;
+  margin: 12;
   font-size: 32px;
   color: white;
+  font-family: sans-serif;
 `;
 
 const ArrowButton = styled.button`

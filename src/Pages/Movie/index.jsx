@@ -4,10 +4,9 @@ import ImgMovie from '../../components/ImgMovie';
 
 const Movie = () => {
   return (
-    <div style={{ backgroundColor: '#000' }}>
+    <div style={{ backgroundColor: '#000', minHeight: '100vh' }}>
       <Header />
       <ImgMovie />
-      <p>movie</p>
       <Footer />
     </div>
   );

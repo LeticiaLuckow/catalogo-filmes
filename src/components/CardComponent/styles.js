@@ -8,6 +8,7 @@ const Card = styled.div`
   margin: 15px;
   color: white;
   background: #383838;
+  font-family: sans-serif;
 `;
 
 const CardImg = styled.img`
