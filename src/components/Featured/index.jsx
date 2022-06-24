@@ -1,19 +1,15 @@
 import { ArrowLeftCircle, ArrowRightCircle } from '@styled-icons/bootstrap';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Container from '../Container';
 import { ArrowButton, FeaturedTitle, ImgDiv } from './styles';
 
-const Featured = () => {
-  const imgLink = [
-    'https://br.web.img3.acsta.net/pictures/16/09/29/21/15/495786.jpg',
-    'https://ingresso-a.akamaihd.net/img/cinema/cartaz/22968-cartaz.jpg',
-    'https://br.web.img3.acsta.net/pictures/22/01/05/09/48/4964345.jpg',
-  ];
+const Featured = ({ featured }) => {
   // imgPos = imgPosicao
   const [imgPos, setImgPos] = useState(0);
 
   // ultima posicao do array
-  const lastPosition = imgLink.length - 1;
+  const lastPosition = featured.length - 1;
   const nextImg = () => {
     if (imgPos === lastPosition) {
       setImgPos(0);
@@ -29,17 +25,10 @@ const Featured = () => {
     }
   };
   // requisição para a api de filmes
-  fetch(
-    'https://api.themoviedb.org/3/movie/popular?api_key=c390b288e9beb4c611edc921516ea70f&language=en-US&page=1',
-  )
-    .then((Response) => Response.json())
-    .then((data) => {
-      console.log('data', data.results);
-    });
 
   //styled-icons
   //https://image.tmdb.org/t/p/w500/kqjL17yufvn9OVLyXYpvtyrFfak.jpg
-
+  console.log('featured', featured);
   return (
     <Container>
       <div style={{ width: '100%' }}>
@@ -49,7 +38,15 @@ const Featured = () => {
           <ArrowButton onClick={prevImg}>
             <ArrowLeftCircle width={40} color="#fff" />
           </ArrowButton>
-          <img src={imgLink[imgPos]} style={{ width: '400px' }} />
+          <Link to={'/movie/' + featured[imgPos]?.id}>
+            <img
+              src={
+                'https://image.tmdb.org/t/p/w400' +
+                featured[imgPos]?.poster_path
+              }
+              style={{ width: '400px' }}
+            />
+          </Link>
           <ArrowButton onClick={nextImg}>
             <ArrowRightCircle width={40} color="#fff" />
           </ArrowButton>

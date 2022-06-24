@@ -17,6 +17,7 @@ const Info = styled.div`
 
 const Release = styled.span`
   font-size: 12px;
+  color: white;
 `;
 const Banner = styled.img`
   max-width: 200px;
