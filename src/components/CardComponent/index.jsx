@@ -1,5 +1,5 @@
 import { StarFill } from '@styled-icons/bootstrap';
-import { Card, CardImg, CardButton } from './styles';
+import { Card, CardImg, CardButton, ContentDiv } from './styles';
 import { Link } from 'react-router-dom';
 
 const CardComponent = ({ linkImg, rating, name, id }) => {
@@ -7,7 +7,7 @@ const CardComponent = ({ linkImg, rating, name, id }) => {
     <Card>
       <CardImg src={linkImg} />
 
-      <div style={{ padding: 8 }}>
+      <ContentDiv>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <StarFill width={13} color="yellow" style={{ marginRight: 4 }} />
           <span>{rating}</span>
@@ -16,7 +16,7 @@ const CardComponent = ({ linkImg, rating, name, id }) => {
         <Link to={'/movie/' + id}>
           <CardButton>Ver mais</CardButton>
         </Link>
-      </div>
+      </ContentDiv>
     </Card>
   );
 };

@@ -1,5 +1,6 @@
+import { Link } from 'react-router-dom';
 import Container from '../Container';
-import { HeaderDiv, HeaderTitle, ImgLogo } from './styles';
+import { HeaderDiv, HeaderTitle, ImgLogo, LogoDiv } from './styles';
 
 const Header = () => {
   const headerLogo =
@@ -7,8 +8,12 @@ const Header = () => {
   return (
     <HeaderDiv>
       <Container>
-        <ImgLogo src={headerLogo} alt="LOGO" />
-        <HeaderTitle>MovieLu</HeaderTitle>
+        <Link to="/" style={{ textDecoration: 'none' }}>
+          <LogoDiv>
+            <ImgLogo src={headerLogo} alt="LOGO" />
+            <HeaderTitle>MovieLu</HeaderTitle>
+          </LogoDiv>
+        </Link>
       </Container>
     </HeaderDiv>
   );

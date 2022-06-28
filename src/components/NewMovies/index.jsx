@@ -5,7 +5,7 @@ import { CardList, TitleP } from './styles';
 const NewMovies = ({ newMovies }) => {
   return (
     <Container>
-      <div>
+      <div style={{ width: '100%', marginTop: '30px' }}>
         <TitleP>Lançamentos</TitleP>
         <CardList>
           {newMovies &&

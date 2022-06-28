@@ -18,6 +18,13 @@ const CardImg = styled.img`
   color: white;
 `;
 
+const ContentDiv = styled.div`
+  padding: 8px;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+`;
 const CardButton = styled.button`
   background: transparent;
   width: 100%;
@@ -26,4 +33,4 @@ const CardButton = styled.button`
   border: 0.5px solid #000;
   cursor: pointer;
 `;
-export { Card, CardImg, CardButton };
+export { Card, CardImg, CardButton, ContentDiv };

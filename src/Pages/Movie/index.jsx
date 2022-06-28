@@ -3,6 +3,7 @@ import Header from '../../components/Header';
 import ImgMovie from '../../components/ImgMovie';
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import Genres from '../../components/Genres';
 
 const Movie = () => {
   let { id } = useParams();
@@ -24,6 +25,7 @@ const Movie = () => {
     <div style={{ backgroundColor: '#000', minHeight: '100vh' }}>
       <Header />
       <ImgMovie movieInfo={movie} />
+      <Genres genreArray={movie.genres} />
       <Footer />
     </div>
   );

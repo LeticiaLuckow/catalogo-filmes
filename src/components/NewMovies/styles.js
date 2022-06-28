@@ -11,7 +11,7 @@ const CardList = styled.div`
   display: flex;
   margin: 8px;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   color: white;
 `;
 
