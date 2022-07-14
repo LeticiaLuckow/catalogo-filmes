@@ -13,6 +13,8 @@ const CardList = styled.div`
   width: 100%;
   justify-content: center;
   color: white;
+  max-width: 100vw;
+  flex-wrap: wrap;
 `;
 
 export { CardList, TitleP };

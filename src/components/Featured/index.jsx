@@ -44,7 +44,7 @@ const Featured = ({ featured }) => {
                 'https://image.tmdb.org/t/p/w400' +
                 featured[imgPos]?.poster_path
               }
-              style={{ width: '400px' }}
+              style={{ width: '400px', maxWidth: 'calc(100vw - 104px)' }}
             />
           </Link>
           <ArrowButton onClick={nextImg}>

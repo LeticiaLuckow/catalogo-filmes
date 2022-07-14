@@ -18,6 +18,10 @@ const ArrowButton = styled.button`
   background: transparent;
   cursor: pointer;
   margin: 100px;
+
+  @media only screen and (max-width: 600px) {
+    margin: 0;
+  }
 `;
 
 export { ImgDiv, FeaturedTitle, ArrowButton };
