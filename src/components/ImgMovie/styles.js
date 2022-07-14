@@ -13,6 +13,11 @@ const Info = styled.div`
   display: flex;
   color: white;
   font-family: sans-serif;
+  flex-direction: row;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+  align-items: center;
 `;
 
 const Release = styled.span`
