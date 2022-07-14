@@ -9,6 +9,10 @@ const Card = styled.div`
   color: white;
   background: #383838;
   font-family: sans-serif;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
 const CardImg = styled.img`
@@ -16,6 +20,9 @@ const CardImg = styled.img`
   width: auto;
   height: auto;
   color: white;
+  @media only screen and (max-width: 600px) {
+    max-width: 100%;
+  }
 `;
 
 const ContentDiv = styled.div`
