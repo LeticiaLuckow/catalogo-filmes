@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const TitleP = styled.p`
+const H1Title = styled.h1`
   margin: 0;
   font-size: 32px;
   color: white;
@@ -17,4 +17,4 @@ const CardList = styled.div`
   flex-wrap: wrap;
 `;
 
-export { CardList, TitleP };
+export { CardList, H1Title };

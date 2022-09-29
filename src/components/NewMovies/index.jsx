@@ -1,12 +1,12 @@
 import CardComponent from '../CardComponent';
 import Container from '../Container';
-import { CardList, TitleP } from './styles';
+import { CardList, H1Title } from './styles';
 
 const NewMovies = ({ newMovies }) => {
   return (
     <Container>
       <div style={{ width: '100%', marginTop: '30px' }}>
-        <TitleP>Lançamentos</TitleP>
+        <H1Title>Lançamentos</H1Title>
         <CardList>
           {newMovies &&
             newMovies
